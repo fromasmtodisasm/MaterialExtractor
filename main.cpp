@@ -15,7 +15,10 @@ int main()
     {
       status = EXIT_SUCCESS;
       cout << "File parsed" << endl;
-
+      std::string command;
+      do {
+        cin >> command;
+      } while(extractor.doCommand(command));
     }
     else {
       cout << "Can't parse file" << endl;
